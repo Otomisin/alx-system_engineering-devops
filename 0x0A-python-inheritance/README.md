@@ -2,30 +2,19 @@
 # 0x0A. Python - Inheritance
 
 # Learning Objectives 
-
-What is a superclass, baseclass or parentclass
-
-What is a subclass
-
-How to list all attributes and methods of a class or instance
-
-When can an instance have new attributes
-
-How to inherit class from another
-
-How to define a class with multiple base classes
-
-What is the default class every class inherit from
-
-How to override a method or attribute inherited from the base class
-
-Which attributes or methods are available by heritage to subclasses
-
-What is the purpose of inheritance
-
-What are, when and how to use isinstance, issubclass, type and super built-in functions
-## Authors
-
-- [@Odim Kingsley](https://www.github.com/okekingscodes)
-
-
+Why Python programming is awesome
+Why indentation is so important in Python
+How to use the if, if ... else statements
+How to use comments
+How to affect values to variables
+How to use the while and for loops
+How is Python’s for different from C‘s?
+How to use the break and continues statements
+How to use else clauses on loops
+What does the pass statement do, and when to use it
+How to use range
+What is a function and how do you use functions
+What does return a function that does not use any return statement
+Scope of variables
+What’s a traceback
+What are the arithmetic operators and how to use them
