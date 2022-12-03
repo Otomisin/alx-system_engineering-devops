@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+This program will assign a random signed number to the variable number each time it is executed
+"""
 import random
 number = random.randint(-10000, 10000)
 digit = abs(number) % 10
