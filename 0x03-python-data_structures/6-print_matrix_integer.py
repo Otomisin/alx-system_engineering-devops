@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 """
+Write a function that prints a matrix of integers.
+"""
+"""
 def print_matrix_integer(matrix=[[]]):
     for i in range(0, len(matrix)):
         a = ""
@@ -10,7 +13,7 @@ def print_matrix_integer(matrix=[[]]):
                      print(" ", end="")
         print()
 
-        
+
 """
 
 def print_matrix_integer(matrix=[[]]):

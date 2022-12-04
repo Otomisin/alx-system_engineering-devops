@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+Write a function that retrieves an element from a list like in C
+"""
 # that retrieves an element from a list like in C.
 
 def element_at(my_list, idx):
