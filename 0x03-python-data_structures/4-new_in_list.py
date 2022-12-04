@@ -11,7 +11,7 @@ def new_in_list(my_list, idx, element):
     else:
         copied_list[idx] = element
         return copied_list
-        
+
 """
 def new_in_list(my_list, idx, element):
     newList = [None] * len(my_list)
