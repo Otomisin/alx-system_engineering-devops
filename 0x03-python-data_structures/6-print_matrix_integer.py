@@ -2,6 +2,8 @@
 """
 Write a function that prints a matrix of integers.
 """
+
+
 def print_matrix_integer(matrix=[[]]):
     for each_list in matrix:
         for i in each_list:
