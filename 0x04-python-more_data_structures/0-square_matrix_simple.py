@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    copy_matrix = [[value**2 for value in row] for row in matrix]
-
-    return copy_matrix
+    new_matrix = [[x ** 2 for x in row] for row in matrix]
+    return new_matrix
