@@ -1,5 +1,2 @@
 # #!/bin/bash
-# export BEST= "School"
-
-#!/bin/bash
-BETTY="Holberton"
+export BEST= "School"
