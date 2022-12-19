@@ -2,9 +2,9 @@
 def raise_exception():
     raise TypeError
 
-"""
-TEST CODE
-"""
+# """
+# TEST CODE
+# """
 # try:
 #     raise_exception()
 # except TypeError as te:
