@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+'''
+Write a function that divides 2 integers and prints the result.
+'''
 def safe_print_division(a, b):
     try:
         result = a / b
@@ -7,3 +11,16 @@ def safe_print_division(a, b):
     finally:
         print("Inside result: {}".format(result))
         return (result)
+
+
+# """
+# TEST CODE
+# """
+# a = 12
+# b = 4
+# result = safe_print_division(a, b)
+# print("{:d} / {:d} = {}".format(a, b, result))
+
+# #or
+
+# print(safe_print_division(3, 4))
