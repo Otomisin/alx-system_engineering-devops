@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-
-# """
-# Write a function that prints the first x elements of a list and only integers.
-# """
 def safe_print_integer(value):
     try:
         int(value)
@@ -12,6 +8,11 @@ def safe_print_integer(value):
     return True
 
 
+
+
+# """
+# Write a function that prints the first x elements of a list and only integers.
+# """
 # """
 # TEST CODE
 # """

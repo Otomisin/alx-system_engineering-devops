@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-# """
-# Write a function that prints an integer.
-# """
 def safe_print_integer_err(value):
      try: 
           val = x
@@ -11,6 +8,9 @@ def safe_print_integer_err(value):
      return value
 
 
+# """
+# """
+# Write a function that prints an integer.
 # """
 # TEST CODE
 # """
