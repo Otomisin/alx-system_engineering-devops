@@ -1,4 +1,4 @@
-## Shell, permissions
+# Shell, permissions
 			
 0	 A Script that changes your user ID to betty	 = >	su betty
 			
@@ -24,7 +24,7 @@
 			
 11	Add execute permission to all subdirectories of the current directory for the everyone. Regular files should not be changed.	 = >	chmod -R +X  or  chmod ugo+x */ or chmod a+x */
 			
-12	Create a directory called dir_holberton with permissions 751 in the working directory. User has all read, write, and execute permissions. Group has read and execute permissions. Others have just execute permission.	 = >	mkdir -m 751 my_dir
+12	Create a directory called my_dir with permissions 751 in the working directory. User has all read, write, and execute permissions. Group has read and execute permissions. Others have just execute permission.	 = >	mkdir -m 751 my_dir
 			
 13	Write a script that changes the group owner to school for the file hello	 = >	chgrp school
 			
