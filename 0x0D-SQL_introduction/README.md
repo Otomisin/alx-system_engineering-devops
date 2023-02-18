@@ -1,1 +1,3 @@
-SQL introduction
+# SQL introduction Tasks
+Write a script that lists all databases of your MySQL server.
+
