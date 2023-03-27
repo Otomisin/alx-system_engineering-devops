@@ -1,4 +1,4 @@
-i#!/bin/env bash
+#!/usr/bin/env bash 
 # bash script to transfer file to a remote server
 
 if [ $# -lt 4 ]; then
@@ -10,3 +10,6 @@ path_to_file=$1
 ip=$2
 username=$3
 path_to_ssh_key=$4
+
+# Transfer the file to the server
+scp -i "$path_to_ssh_key" -o StrictHostKeyChecking=no "$path_to_file" "$username@$ip:~/"
