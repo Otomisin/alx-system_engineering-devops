@@ -1,0 +1,12 @@
+#!/bin/usr/env bash
+# How to automate the automate nginx fix
+
+#Delecting the deafult file in the etc/nginx/site-enabled/default
+rm etc/nginx/site-enabled/default
+
+#Create symbolic link to site-available
+ln -s etc/nginx/site-available/default etc/nginx/site-enabled/default
+
+#Restart nginx
+sudo service ngix report
+
