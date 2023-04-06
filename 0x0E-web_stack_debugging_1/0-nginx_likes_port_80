@@ -7,5 +7,5 @@ sudo rm /etc/nginx/sites-enabled/default
 # Create symbolic link to the deafult file in sites-available
 sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 
-# Restart nginx
+# Restart nginx service
 sudo service nginx restart
