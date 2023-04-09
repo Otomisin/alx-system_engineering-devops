@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
-# Bash script with commands to automate your fix.
 
-# Go to site enable folder nd  remove existing defaul file
-sudo rm /etc/nginx/sites-enabled/default
-
-# Create symbolic link to the deafult file in sites-available
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
-
-# Restart nginx service
+sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
 sudo service nginx restart
+PID=$(cat /var/run/nginx.pid)
+kill -9 "$PID"
