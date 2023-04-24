@@ -7,7 +7,8 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     user_response = requests.get(url + "users/{}".format(sys.argv[1]))
     user = user_response.json()
-    todos_response = requests.get(url + "todos", params={"userId": sys.argv[1]})
+    todos_response = requests.get(
+        url + "todos", params={"userId": sys.argv[1]})
     todos = todos_response.json()
 
     completed = [t.get("title") for t in todos if t.get("completed") is True]
