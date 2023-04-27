@@ -1,18 +1,15 @@
-#!/usr/bin/python3
-"""Returns the to-do list for a given employee ID."""
 import requests
-import sys
 
-if __name__ == "__main__":
-    url = "https://jsonplaceholder.typicode.com/"
-    user_response = requests.get(url + "users/{}".format(sys.argv[1]))
-    user = user_response.json()
-    todos_response = requests.get(
-        url + "todos", params={"userId": sys.argv[1]})
-    todos = todos_response.json()
+employee_id = "1"
 
-    completed = [t.get("title") for t in todos if t.get("completed") is True]
-    print("Employee {} is done with tasks({}/{}):".format(
-        user.get("name"), len(completed), len(todos)))
-    for c in completed:
-        print("\t {}".format(c))
+# Make API requests to retrieve user information and to-do list
+user_response = requests.get(f"https://jsonplaceholder.typicode.com/users/{employee_id}")
+user = user_response.json()
+todos_response = requests.get(f"https://jsonplaceholder.typicode.com/todos?userId={employee_id}")
+todos = todos_response.json()
+
+# Count completed tasks and print them out
+completed_tasks = [t for t in todos if t["completed"]]
+print(f"Employee {user['name']} is done with {len(completed_tasks)}/{len(todos)} tasks:")
+for task in completed_tasks:
+    print(f"\t {task['title']}")
