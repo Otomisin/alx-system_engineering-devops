@@ -4,7 +4,6 @@ Function that queries the Reddit API and prints
 the top ten hot posts of a subreddit
 """
 import requests
-import sys
 
 
 def top_ten(subreddit):
@@ -21,10 +20,8 @@ def top_ten(subreddit):
     }
 
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    response = requests.get(url,
-                       headers=headers,
-                       params=params,
-                       allow_redirects=False)
+    response = requests.get(url, headers=headers, params=params,
+                            allow_redirects=False)
     if response.status_code != 200:
         print(None)
         return
