@@ -5,7 +5,6 @@ the top ten hot posts of a subreddit
 """
 import re
 import requests
-import sys
 
 
 def add_title(dictionary, hot_posts):
